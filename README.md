@@ -1,6 +1,6 @@
 // Program to identify the smallest distance between the two points in a plane containing 100 points
 
-#include <iostream> 
+#include <iostream.h> 
 #include <float.h> 
 #include <stdlib.h> 
 #include <math.h> 
