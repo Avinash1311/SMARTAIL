@@ -166,3 +166,19 @@ int main()
 
     return 0; 
 }
+
+/* In this program first all the points are sorted according to y coordinates
+   then the array is divided into two sub arrays and the smallest distance in both sub arrays
+   Then the smallest of that is taken 
+   Then a mid point of x coordinates is found by comparing the coorinates of middle point
+   Then the points in the smallest distance from the mid points are taken
+   Each of one are taken there measurements from there positions to mid point
+   If the distance of that measurement is less than the distance found before 
+   The value is taken as tha smallest distance */
+/* NOTE: sorry for the thing i dont know and i am not clear in generating random coordinates so i myself wrote 100 random coordinates.
+   TIME COMPLEXITY EXPLAINATION: 
+   Let Time complexity of above algorithm be T(n). Let us assume that we use a O(nLogn) sorting algorithm. The above algorithm divides all points in two sets and recursively calls for two sets. After dividing, it finds the strip in O(n) time. Also, it takes O(n) time to divide the Py array around the mid vertical line. Finally finds the closest points in strip in O(n) time. So T(n) can be expressed as follows
+   T(n) = 2T(n/2) + O(n) + O(n) + O(n)
+   T(n) = 2T(n/2) + O(n)
+   T(n) = O(nLogn)
+   Thus the time complexity O(nLogn) is achived. */
