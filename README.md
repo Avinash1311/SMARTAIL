@@ -158,7 +158,7 @@ float closest(Point P[], int n)
 int main() 
 { 
 
-    Point P[] = {{2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4}}; 
+    Point P[] = {{2,13}, {12,3}, {4,15}, {5,12}, {12,15}, {3,4}}; 
 
     int n = sizeof(P) / sizeof(P[0]); 
 
